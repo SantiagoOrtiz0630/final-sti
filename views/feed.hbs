@@ -1,0 +1,110 @@
+<section class="contDB">
+    <div class="contFilter">
+
+        <section class="people">
+            <div class="li">
+                <h3 class="title">People</h3>
+            </div>
+
+            <div class="contPeople">
+                {{#each people}}
+                <article class="person">
+                    <div class="cont">
+                        <div class="img" style="background-image: url('/img/profile/{{this.img}}.jpg');"></div>
+                        <h3 class="afi">{{this.afi}}</h3>
+                    </div>
+                    <h3>{{this.name}}</h3>
+                </article>
+                {{/each}}
+            </div>
+
+        </section>
+
+        <section class="songs">
+            <div class="contSongs">
+                {{#each songs}}
+                <a href="/song?id={{this.id}}" class="song">
+                    <div class="img"></div>
+                    <h3>{{this.cancion}}</h3>
+                </a>
+                {{/each}}
+            </div>
+            <div class="li">
+                <h3 class="title">Songs</h3>
+            </div>
+        </section>
+
+        <section class="filter">
+
+            <div class="li">
+                <h3 class="title">Filter</h3>
+            </div>
+
+            <div class="cont">
+                <a href="/feed?filter=General">General</a>
+                <a href="/feed?filter=Regueton">Regueton</a>
+                <a href="/feed?filter=Rock">Rock</a>
+                <a href="/feed?filter=Electronica">Electronica</a>
+                <a href="/feed?filter=Metal">Metal</a>
+                <a href="/feed?filter=Rap">Rap</a>
+                <a href="/feed?filter=Pop">Pop</a>
+            </div>
+        </section>
+    </div>
+</section>
+
+<section class="contFeed">
+
+    <!--
+        <h1 class="name">{{profile.name}}</h1>
+        <h1 class="name">{{profile.cc}}</h1>
+        <h1 class="name">{{profile.img}}</h1>
+        <h1 class="name">{{profile.Regueton}}</h1>
+        <h1 class="name">{{profile.Rock}}</h1>
+        <h1 class="name">{{profile.Electronica}}</h1>
+        <h1 class="name">{{profile.Metal}}</h1>
+        <h1 class="name">{{profile.Rap}}</h1>
+        <h1 class="name">{{profile.Pop}}</h1>
+        <h1 class="name">{{profile.id}}</h1>
+    -->
+
+    <section class="leftCont">
+        <h1 class="logo">LOGO</h1>
+
+        <div class="cont">
+            <a class="title" href="/home">HOME</a>
+            <a class="titleVar" href="/feed?filter=General">FEED</a>
+        </div>
+    </section>
+
+    <section class="rightCont">
+
+        <section class="profileData">
+            <div class="left">
+                <h3>{{profile.name}}</h3>
+                <h3>{{profile.cc}}</h3>
+            </div>
+
+            <div class="right">
+                <div class="profileImg" style="background-image: url(/img/profile/{{profile.img}}.jpg);"></div>
+            </div>
+        </section>
+
+        <a href="/">Salir</a>
+    </section>
+
+
+</section>
+
+<script language="javascript" type="text/javascript" src="/js/editAfi.js"></script>
+
+<script src="https://unpkg.com/tippy.js@3/dist/tippy.all.min.js"></script>
+
+<script>
+    let song = document.getElementsByClassName("song");
+
+    for (let i = 0; i < song.length; i++) {
+        tippy(song[i], { content: "¿Quienes piensan similara mi sobre este género musical?" });
+    }
+
+</script>

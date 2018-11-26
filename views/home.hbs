@@ -1,0 +1,68 @@
+<section class="contHome">
+
+    <!--
+        <h1 class="name">{{profile.name}}</h1>
+        <h1 class="name">{{profile.cc}}</h1>
+        <h1 class="name">{{profile.img}}</h1>
+        <h1 class="name">{{profile.Regueton}}</h1>
+        <h1 class="name">{{profile.Rock}}</h1>
+        <h1 class="name">{{profile.Electronica}}</h1>
+        <h1 class="name">{{profile.Metal}}</h1>
+        <h1 class="name">{{profile.Rap}}</h1>
+        <h1 class="name">{{profile.Pop}}</h1>
+    -->
+
+    <section class="leftCont">
+        <h1 class="logo">LOGO</h1>
+
+        <div class="cont">
+            <a class="titleVar" href="/home">HOME</a>
+            <a class="title" href="/feed?filter=General">FEED</a>
+        </div>
+    </section>
+
+    <section class="rightCont">
+
+        <section class="profileData">
+            <div class="left">
+                <h3>{{profile.name}}</h3>
+                <h3>{{profile.cc}}</h3>
+            </div>
+
+            <div class="right">
+                <div class="profileImg" style="background-image: url(/img/profile/{{profile.img}}.jpg);"></div>
+                <!--
+                <ul>
+                    <li>Regueton: {{profile.Regueton}}</li>
+                    <li>Rock: {{profile.Rock}}</li>
+                    <li>Electronica: {{profile.Electronica}}</li>
+                    <li>Metal: {{profile.Metal}}</li>
+                    <li>Rap: {{profile.Rap}}</li>
+                    <li>Pop: {{profile.Pop}}</li>
+                </ul>
+                -->
+            </div>
+        </section>
+
+        <div class="cont">
+            <a href="/select">Select Profile</a>
+            <a href="/register">Create Profile</a>
+            <a class="dbLink" href="/recomended">you may like know</a>
+        </div>
+
+        <a href="/">Salir</a>
+    </section>
+
+</section>
+
+<script src="https://unpkg.com/tippy.js@3/dist/tippy.all.min.js"></script>
+
+<script>
+    let feed = document.getElementsByClassName("title")[0];
+
+    let db = document.getElementsByClassName("dbLink")[0];
+
+    tippy(feed, { content: "¿Quienes tienen gustos musicales similares a los mios?" });
+
+    tippy(db, { content: "¿Quienes son los más parecidos a mi en todos los proyectos?" })
+</script>

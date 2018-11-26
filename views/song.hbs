@@ -1,0 +1,110 @@
+<section class="songUI">
+    <section class="contSongDB">
+
+        <section class="listPeople">
+
+            <div class="contPeople">
+            {{#each people}}
+                <article class="person">
+                    <div class="cont">
+                        <div class="img" style="background-image: url('/img/profile/{{this.img}}.jpg');"></div>
+                        <h3 class="afi">{{this.afi}}</h3>
+                    </div>
+                    <h3>{{this.name}}</h3>
+                </article>
+            {{/each}}
+            </div>
+
+            <div class="li">
+                <h3>People</h3>
+            </div>
+        </section>
+
+        <section class="data">
+
+            <div class="contData">
+                <h3>{{song.cancion}}</h3>
+                <h3>{{song.autor}}</h3>
+                <h4>{{song.year}}</h4>
+                <h4>{{song.genero}}</h4>
+            </div>
+
+            <section class="player">
+                    <div id="canvas"></div>
+
+                    <div class="contBtn">
+                        <div id="play"></div>
+                        <div id="stop"></div>
+                        <div id="pause"></div>
+                    </div>
+            </section>
+        </section>
+
+        <section class="dataDos">
+
+            <div class="li">
+                <h3>{{song.genero}}</h3>
+            </div>
+
+            <div class="listMusic">
+                {{#each songs}}
+                <a href="/song?id={{this.id}}" class="song">
+                    <div class="img"></div>
+                    <h3>{{this.cancion}}</h3>
+                </a>
+                {{/each}}
+            </div>
+        </section>
+
+    </section>
+</section>
+
+<section class="contSong">
+
+    <!--
+        <h1 class="name">{{profile.name}}</h1>
+        <h1 class="name">{{profile.cc}}</h1>
+        <h1 class="name">{{profile.img}}</h1>
+        <h1 class="name">{{profile.Regueton}}</h1>
+        <h1 class="name">{{profile.Rock}}</h1>
+        <h1 class="name">{{profile.Electronica}}</h1>
+        <h1 class="name">{{profile.Metal}}</h1>
+        <h1 class="name">{{profile.Rap}}</h1>
+        <h1 class="name">{{profile.Pop}}</h1>
+    -->
+
+    <section class="leftCont">
+        <h1 class="logo">LOGO</h1>
+
+        <div class="cont">
+            <a class="title" href="/home">HOME</a>
+            <a class="title" href="/feed?filter=General">FEED</a>
+        </div>
+    </section>
+
+    <section class="rightCont">
+
+        <section class="profileData">
+            <div class="left">
+                <h3>{{profile.name}}</h3>
+                <h3>{{profile.cc}}</h3>
+            </div>
+
+            <div class="right">
+                <div class="profileImg" style="background-image: url(/img/profile/{{profile.img}}.jpg);"></div>
+            </div>
+        </section>
+
+        <a href="/">Salir</a>
+    </section>
+</section>
+
+<script>
+    var idSonido = {{song.id}};
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+<script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.sound.js"></script>
+
+<script language="javascript" type="text/javascript" src="/js/song.js"></script>
+<script language="javascript" type="text/javascript" src="/js/editAfi.js"></script>

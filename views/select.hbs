@@ -1,0 +1,31 @@
+<section class="contSelect">
+
+    <div class="contProfile">
+        {{#each users}}
+        <form class="profile" action="/select" method="POST">
+            <div class="img" style="background-image: url(/img/profile/{{img}}.jpg);"></div>
+            <h4 class="name">{{this.name}}</h4>
+
+            <input type="text" style="display: none;" name="name" value="{{this.name}}">
+            <input type="text" style="display: none;" name="cc" value="{{this.cc}}">
+            <input type="text" style="display: none;" name="imgDrive" value="{{this.imgDrive}}">
+            <input type="text" style="display: none;" name="img" value="{{this.img}}">
+            <input type="text" style="display: none;" name="Regueton" value="{{this.Regueton}}">
+            <input type="text" style="display: none;" name="Rock" value="{{this.Rock}}">
+            <input type="text" style="display: none;" name="Electronica" value="{{this.Electronica}}">
+            <input type="text" style="display: none;" name="Metal" value="{{this.Metal}}">
+            <input type="text" style="display: none;" name="Rap" value="{{this.Rap}}">
+            <input type="text" style="display: none;" name="Pop" value="{{this.Pop}}">
+            <input type="text" style="display: none;" name="id" value="{{this.id}}">
+
+            <input type="submit" value="escoger">
+        </form>
+        {{/each}}
+    </div>
+
+    <div class="contBtn">
+        <a href="/register" class="">Create Profile</a>
+        <a href="/" class="">BACK</a>
+    </div>
+
+</section>

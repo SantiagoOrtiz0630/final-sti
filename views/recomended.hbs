@@ -1,0 +1,30 @@
+<section class="contReco">
+
+    <div class="contBtn">
+        <a href="/home">BACK</a>
+        <a href="/select">SELECT PROFILE</a>
+        <a href="/register">CREATE PROFILE</a>
+    </div>
+
+    <div class="contMain">
+        <h2>¿Podría aprender idiomas hablando con estas personas?</h2>
+        <h3>Con ellos hay más similitudes que con los demás, en toda la Base de Datos del proyecto</h3>
+        <h4>Inluyendo los demás perfiles</h4>
+    </div>
+
+    <div class="contPeople">
+
+        {{#each people}}
+        <article class="person">
+            <div class="cont">
+                <div class="img" style="background-image: url('/img/profile/{{this.img}}.jpg');"></div>
+                <h3 class="afi">{{this.afi}}</h3>
+            </div>
+            <h3>{{this.name}}</h3>
+        </article>
+        {{/each}}
+
+    </div>
+
+</section>
+<script language="javascript" type="text/javascript" src="/js/editAfi.js"></script>
