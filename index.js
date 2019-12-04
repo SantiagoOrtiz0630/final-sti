@@ -15,7 +15,6 @@ firebase.initializeApp(config);
 
 //firebase
 
-
 //var
 const path = require('path');
 const hbs = require('express-handlebars');
@@ -477,7 +476,7 @@ app.get('/*', (req, res) => {
     });
 });
 
-app.listen(3000, function () {
+app.listen(5000, function () {
     console.log("Servidor iniciado")
 });
 //rutas
