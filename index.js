@@ -476,9 +476,8 @@ app.get('/*', (req, res) => {
     });
 });
 
-app.listen(5000, function () {
-    console.log("Servidor iniciado")
-});
+var port_number = server.listen(process.env.PORT || 5000);
+app.listen(port_number);
 //rutas
 
 function compareAfinity(a, b) {
