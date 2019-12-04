@@ -77,24 +77,20 @@ body .contLanding > .contMain {
           align-items: center;
 }
 
-body .contLanding > .contMain > h1 {
-  text-transform: uppercase;
-  font-size: 56px;
-  color: #fafafa;
-  cursor: pointer;
-  -webkit-transition: ease-in-out all 0.2s;
-  transition: ease-in-out all 0.2s;
-  margin-bottom: 40px;
-}
-
-body .contLanding > .contMain > h1:hover {
-  color: #1688e6;
-}
-
 body .contLanding > .contMain > h3 {
+  margin-top: 40px;
   width: 60%;
   text-align: center;
   font-size: 16px;
+  font-weight: 500;
+  color: #5c5c5c;
+}
+
+body .contLanding > .contMain > h5 {
+  margin-top: 20px;
+  width: 60%;
+  text-align: center;
+  font-size: 12px;
   font-weight: 500;
   color: #5c5c5c;
 }
@@ -249,7 +245,7 @@ body .contSelect > .contProfile > .profile {
 }
 
 body .contSelect > .contProfile > .profile:hover {
-  background-color: #1688e6;
+  background-color: #0e9ff0;
 }
 
 body .contSelect > .contProfile > .profile > .img {
@@ -1684,19 +1680,10 @@ body .contReco > .contPeople > .person > h3 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-}
-
-.leftCont > h1 {
-  text-transform: uppercase;
-  font-size: 40px;
-  color: #fafafa;
-  cursor: pointer;
-  -webkit-transition: ease-in-out all 0.2s;
-  transition: ease-in-out all 0.2s;
-}
-
-.leftCont > h1:hover {
-  color: #1688e6;
+  /*
+    >.Logo{
+        
+    }*/
 }
 
 .leftCont > .cont {
@@ -1730,7 +1717,7 @@ body .contReco > .contPeople > .person > h3 {
 }
 
 .leftCont > .cont > .title:hover {
-  color: #1688e6;
+  color: #0e9ff0;
 }
 
 .leftCont > .cont .titleVar {
@@ -1760,11 +1747,11 @@ body .contReco > .contPeople > .person > h3 {
 }
 
 .leftCont > .cont .titleVar:hover {
-  color: #1688e6;
+  color: #0e9ff0;
 }
 
 .leftCont > .cont .titleVar:hover::before {
-  background: #1688e6;
+  background: #0e9ff0;
 }
 
 .leftCont > .cont .titleVar::before {
@@ -1888,7 +1875,7 @@ body .contReco > .contPeople > .person > h3 {
 }
 
 .rightCont > .profileData > .right > .profileImg:hover {
-  border: 5px solid #1688e6;
+  border: 5px solid #0e9ff0;
 }
 
 .rightCont > .profileData > .right > ul {
@@ -1982,6 +1969,6 @@ body .contReco > .contPeople > .person > h3 {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #1688e6;
+  background: #0e9ff0;
 }
 /*# sourceMappingURL=style.css.map */
